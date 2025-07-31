@@ -4,15 +4,12 @@ import { supabase } from "@/utils/supabase/client";
 import { getCurrentWeekRange } from "@/app/_helper/helper";
 
 export async function POST(request) {
-  //   const { userId, workoutCategory } = await request.json();
+  // const { user_id, workoutCategory } = await request.json();
   const { workoutCategory } = await request.json();
 
   if (!workoutCategory) {
     return NextResponse.json({ error: "Missing parameters" }, { status: 400 });
   }
-  //   if (!userId || !workoutCategory) {
-  //     return NextResponse.json({ error: "Missing parameters" }, { status: 400 });
-  //   }
 
   const { monday, sunday } = getCurrentWeekRange();
 
@@ -20,7 +17,7 @@ export async function POST(request) {
   const { data: challenge, error } = await supabase
     .from("weekly_challenges")
     .select("*")
-    // .eq("userId", userId)
+    // .eq("user_id", user_id)
     .eq("status", "active")
     .gte("weekStartDate", monday.toISOString())
     .lte("weekEndDate", sunday.toISOString())

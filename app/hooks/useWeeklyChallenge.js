@@ -28,7 +28,7 @@ export default function useWeeklyChallenge(workoutStats) {
     }
 
     fetchChallenge();
-  }, [workoutStats]);
+  });
 
   return { challenge, loading, error };
 }

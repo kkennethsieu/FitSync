@@ -24,7 +24,7 @@ export async function POST(request) {
     .limit(1);
 
   if (error) {
-    return NextResponse.jçson({ error: "Database error" }, { status: 500 });
+    return NextResponse.json({ error: "Database error" }, { status: 500 });
   }
 
   if (existingChallenges.length > 0) {
