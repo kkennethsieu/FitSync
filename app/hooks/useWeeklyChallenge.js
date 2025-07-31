@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
 
 export default function useWeeklyChallenge(workoutStats) {
-  const [challenge, setChallenge] = useState("");
+  const [challenge, setChallenge] = useState(null); // null means not loaded yet
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Always fetch challenge, pass empty object if workoutStats missing
     async function fetchChallenge() {
       setLoading(true);
       setError(null);
@@ -19,9 +18,10 @@ export default function useWeeklyChallenge(workoutStats) {
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
 
         const data = await res.json();
-        setChallenge(data.challenge || "");
+        setChallenge(data.challenge || null);
       } catch (err) {
         setError(err.message || "Failed to fetch challenge");
+        setChallenge(null);
       } finally {
         setLoading(false);
       }
