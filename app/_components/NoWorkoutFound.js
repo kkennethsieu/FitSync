@@ -5,7 +5,7 @@ function NoWorkoutFound() {
         No workouts recorded this month
       </h3>
       <p className="mb-4 text-muted-foreground">
-        You're just one workout away from building momentum 💪
+        You&apos;re just one workout away from building momentum 💪
       </p>
       <p className="text-sm text-gray-500">
         Once you log a workout, your progress charts and insights will appear
