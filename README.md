@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FITSYNC
 
-## Getting Started
+FITSYNC is a modern fitness tracking web application that helps users monitor workouts, personal records, and exercise analytics. Built with Next.js (App Router) and Tailwind CSS, FITSYNC offers a smooth user experience with dark mode support, mobile responsiveness, and seamless navigation.
 
-First, run the development server:
+---
+
+## Features
+
+- User Authentication with Supabase
+- Workout tracking and analytics dashboards
+- Personal records tracking with categorized stats
+- Exercise catalog and trends
+- Responsive design with Tailwind CSS
+- Dark mode toggle
+- Loading progress bar similar to YouTube's style
+- Settings sidebar and profile dropdown with hover interactions
+- Full SSR and App Router support
+
+---
+
+## Technologies Used
+
+- Next.js 13 (App Router)
+- React
+- Tailwind CSS
+- Supabase (Auth and Database)
+- Radix UI components
+- React Query
+- Recharts (for charts)
+- NextNProgress (customized progress bar)
+- Google Fonts (Oswald)
+- MUI/Luicde Icons
+- Next/Image for optimized image handling
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/fitsync.git
+cd fitsync
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Create a `.env.local` file and add your environment variables:
+
+```
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+NEXT_PUBLIC_SUPABASE_IMG_URL=your_image_base_url
+```
+
+4. Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Navigate the sidebar or profile dropdown to explore the dashboard, analytics, activities, and settings.
+- Track your workouts and see visual summaries in charts and cards.
+- Adjust theme preferences in settings for light or dark mode.
+- Enjoy mobile-friendly layouts with optimized UX.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Customization
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Modify Tailwind config for colors and themes.
+- Update components in `/app` directory.
+- Add new analytics or workout tracking features as needed.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Please open issues or submit pull requests.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## License
+
+MIT License © 2025 Kenneth Sieu
+
+---
+
+## Contact
+
+For questions or support, reach out at kkennethsieu@gmail.com
