@@ -4,6 +4,16 @@ FITSYNC is a modern fitness tracking web application that helps users monitor wo
 
 ---
 
+## Screenshots
+
+![Dashboard Screenshot](public/screenshots/dashboardScreenshot.png)
+![Activites Page Screenshot](public/screenshots/activitesScreenshot_1.png)
+![Activites Page Screenshot](public/screenshots/activitesScreenshot_2.png)
+![Analytics Screenshot](public/screenshots/analyticsScreenshot_1.png)
+![Analytics Screenshot](public/screenshots/analyticsScreenshot_2.png)
+![Catalog Screenshot](public/screenshots/catalogScreenshot.png)
+![Settings Screenshot](public/screenshots/settingsScreenshot.png)
+
 ## Features
 
 - User Authentication with Supabase
