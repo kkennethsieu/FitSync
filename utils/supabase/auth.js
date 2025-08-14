@@ -10,11 +10,11 @@ import GitHub from "next-auth/providers/github";
 
 const authConfig = {
   providers: [
-    Google({
+    GoogleProvider({
       clientId: process.env.AUTH_GOOGLE_ID,
       clientSecret: process.env.AUTH_GOOGLE_SECRET,
     }),
-    GitHub({
+    GitHubProvider({
       clientId: process.env.AUTH_GITHUB_ID,
       clientSecret: process.env.AUTH_GITHUB_SECRET,
     }),
@@ -43,7 +43,8 @@ const authConfig = {
         }
 
         return true;
-      } catch {
+      } catch (err) {
+        console.errror("SignIn Error");
         return false;
       }
     },
