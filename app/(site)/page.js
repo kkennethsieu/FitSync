@@ -8,9 +8,13 @@ import TodayCard from "@/app/_components/TodayCard";
 import { getWorkoutsThisWeek } from "@/app/_helper/helperWeeklyStats";
 import { loadDashboardData } from "@/lib/loadDashboardData";
 import { auth } from "@/utils/supabase/auth";
+import { redirect } from "next/navigation";
 
 async function page() {
   const session = await auth();
+  if (!session?.user) {
+    redirect("/login");
+  }
   const { workouts, exerciseCatalog, exerciseType } = await loadDashboardData(
     session.user.user_id
   );
