@@ -6,7 +6,7 @@
 // } from "@/lib/data-service";
 // import NextAuth from "next-auth";
 // import GoogleProvider from "next-auth/providers/google";
-// import GitHubProvider from "next-auth/providers/github";
+// import GithubP from "next-auth/providers/github";
 
 // const authConfig = {
 //   providers: [
@@ -136,8 +136,6 @@ const authConfig = {
   pages: {
     signIn: "/login",
   },
-
-  debug: process.env.NODE_ENV !== "production",
 };
 
 export const {
