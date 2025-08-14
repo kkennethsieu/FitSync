@@ -4,43 +4,44 @@ FITSYNC is a modern fitness tracking web application that helps users monitor wo
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
-![Dashboard Screenshot](public/screenshots/dashboardScreenshot.png)
-![Activites Page Screenshot](public/screenshots/activitesScreenshot_1.png)
-![Activites Page Screenshot](public/screenshots/activitesScreenshot_2.png)
-![Analytics Screenshot](public/screenshots/analyticsScreenshot_1.png)
-![Analytics Screenshot](public/screenshots/analyticsScreenshot_2.png)
-![Catalog Screenshot](public/screenshots/catalogScreenshot.png)
-![Settings Screenshot](public/screenshots/settingsScreenshot.png)
-
-## Features
-
-- User Authentication with Supabase
-- Workout tracking and analytics dashboards
-- Personal records tracking with categorized stats
-- Exercise catalog and trends
-- Responsive design with Tailwind CSS
-- Dark mode toggle
-- Loading progress bar similar to YouTube's style
-- Settings sidebar and profile dropdown with hover interactions
-- Full SSR and App Router support
+| Dashboard                                                           | Activities                                                               | Analytics                                                               |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
+| ![Dashboard Screenshot](public/screenshots/dashboardScreenshot.png) | ![Activities Screenshot 1](public/screenshots/activitesScreenshot_1.png) | ![Analytics Screenshot 1](public/screenshots/analyticsScreenshot_1.png) |
+| ![Catalog Screenshot](public/screenshots/catalogScreenshot.png)     | ![Activities Screenshot 2](public/screenshots/activitesScreenshot_2.png) | ![Analytics Screenshot 2](public/screenshots/analyticsScreenshot_2.png) |
+| **Settings**                                                        |                                                                          |                                                                         |
+| ![Settings Screenshot](public/screenshots/settingsScreenshot.png)   |                                                                          |                                                                         |
 
 ---
 
-## Technologies Used
+## 🚀 Features
 
-- Next.js 13 (App Router)
-- React
-- Tailwind CSS
-- Supabase (Auth and Database)
-- Radix UI components
-- React Query
-- Recharts (for charts)
-- NextNProgress (customized progress bar)
-- Google Fonts (Oswald)
-- MUI/Luicde Icons
-- Next/Image for optimized image handling
+- 🔑 **User Authentication** with Supabase
+- 📊 **Workout tracking & analytics dashboards**
+- 🏆 **Personal records** tracking with categorized stats
+- 📚 **Exercise catalog** and trends
+- 📱 **Responsive design** with Tailwind CSS
+- 🌙 **Dark mode** toggle
+- ⏳ **Loading progress bar** similar to YouTube
+- ⚙️ **Settings sidebar** & profile dropdown with hover interactions
+- 🌐 **Full SSR** and App Router support
+
+---
+
+## 🛠 Technologies Used
+
+- **Next.js 13** (App Router)
+- **React**
+- **Tailwind CSS**
+- **Supabase** (Auth & Database)
+- **Radix UI**
+- **React Query**
+- **Recharts** (Charts)
+- **NextNProgress** (Custom progress bar)
+- **Google Fonts** (Oswald)
+- **MUI/Luicde Icons**
+- **Next/Image** (Optimized image handling)
 
 ---
 
